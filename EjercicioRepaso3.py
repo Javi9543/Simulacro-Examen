@@ -9,10 +9,12 @@ def contadorCadena(cad):
     print (f"La longitud de {cad} es {cont}")
 
 def main():
-
-    cadena = input("Introduzca una cadena para saber su longitud: ")
-
-    contadorCadena(cadena)
+    try:
+        cadena = input("Introduzca una cadena para saber su longitud: ")
+        contadorCadena(cadena)
+        
+    except Exception as e:
+        print("Hubo un error en el programa, intentelo de nuevo")
 
 
 if __name__ == "__main__":
