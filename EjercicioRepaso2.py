@@ -10,11 +10,14 @@ def maxv2(n1, n2, n3):
         print(f'{n3} es mayor que {n2} y {n1}')
 
 def main():
-    num1 = int(input("Introduzca el primer numero: "))
-    num2 = int(input("Introduzca el segundo numero: "))
-    num3 = int(input("Introduzca el tercer numero: "))
+    try:
+        num1 = int(input("Introduzca el primer numero: "))
+        num2 = int(input("Introduzca el segundo numero: "))
+        num3 = int(input("Introduzca el tercer numero: "))
 
-    maxv2(num1, num2, num3)
+        maxv2(num1, num2, num3)
+    except ValueError:
+        print("Introduzca solo numeros enteros")
 
 if __name__ == "__main__":
     main()
