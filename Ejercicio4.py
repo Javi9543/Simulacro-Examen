@@ -7,8 +7,11 @@ def vocal(caracter):
         print(f'el caracter {caracter}, no es vocal')
 
 def main():
-    caracter = str(input("Introduzca un caracter: "))
-    vocal(caracter)
+    try:
+        caracter = str(input("Introduzca un caracter: "))
+        vocal(caracter)
+    except Exception as e:
+        print("Introduce un caracter no cualquier otra cosa")
 
 if __name__ == "__main__":
     main()
